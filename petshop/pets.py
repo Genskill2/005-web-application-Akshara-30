@@ -158,6 +158,7 @@ def edit(pid):
             cursor.execute(sql_update_query, data)    
             conn.commit()
         return redirect(url_for("pets.pet_info", pid=pid), 302)
+    
         
     
 
